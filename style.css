@@ -1,0 +1,507 @@
+* {
+    margin-left: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo e fundo */
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+
+
+/* Container para alinhar o conteúdo */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Estilo do header */
+.hero {
+    background: linear-gradient(135deg, #3f0808, #570606);
+    color: #fff;
+    padding: 50px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; /* profissional, não arredondado demais */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+
+
+/* Estilo do botão do WhatsApp */
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 50px; /* Aumentando a margem superior */
+    margin-bottom: 50px; /* Adicionando margem inferior */
+    max-width: 50%;
+    max-width: 300px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Estilo do botão do Instagram */
+/* Estilo do botão do Instagram */
+.instagram-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f84f6e, #ac2bac); /* Degradê Instagram */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 20px; /* Aumentando a margem superior */
+    margin-bottom: 20px; /* Adicionando margem inferior */
+    max-width: 200%;
+    max-width: 300px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Ícone do WhatsApp dentro do botão */
+.whatsapp-btn i {
+    font-size: 1.6rem; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+/* Efeito de hover */
+.whatsapp-btn:hover {
+    background-color: #128C7E; /* Cor do WhatsApp quando passa o mouse */
+    transform: scale(1.05); /* Leve aumento de tamanho ao passar o mouse */
+}
+
+
+/* Estilo do botão de Instagram */
+.instagram-btn {
+    display: inline-flex; /* Usando flexbox para alinhamento */
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: center; /* Alinha horizontalmente os itens */
+    background: linear-gradient(45deg, #E4405F, #F58529); /* Degradê das cores do Instagram */
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    margin: 15px 0 auto;
+    max-width: 100%;
+    max-width: 300px; /* Tamanho máximo do botão */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+}
+
+/* Ícone do Instagram dentro do botão */
+.instagram-btn i {
+    font-size: 1.6rem; /* Tamanho maior para o ícone */
+}
+
+/* Efeito de hover */
+.instagram-btn:hover {
+    background: linear-gradient(45deg, #C13584, #F58529); /* Mudança de degradê ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento do tamanho */
+}
+
+
+/* Foto da advogada */
+#foto-advogada {
+    text-align: center;
+    padding: 20px 0;
+}
+
+ 
+    .foto-advogada  {
+        width: 100%;
+        height: auto;
+    }
+    
+
+
+/* Estilo da seção sobre */
+#sobre {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#sobre h2 {
+    font-size: 2rem;
+    color: #800000;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* Estilo da seção de localização */
+#localizacao {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin-bottom: 30px; /* Adicionando espaçamento inferior */
+}
+
+#localizacao h2 {
+    font-size: 2rem;
+    color: #800000;
+    margin-bottom: 20px;
+}
+
+#localizacao p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.mapa iframe {
+    max-width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    margin: 0 auto;
+}
+
+
+/* ===== RODAPÉ PROFISSIONAL, FINO E DISCRETO ===== */
+
+footer {
+    background-color: #3f0808;
+    color: #ffffff;
+    text-align: center;
+    padding: 4px 0;           /* bem menor */
+    font-size: 0.85rem;       /* letra menor */
+}
+
+footer p {
+    margin: 0 auto;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+footer a {
+    color: #fffffffb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Adicionando transição suave para o toggle */
+.area-info {
+    transition: all 0.3s ease;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+
+/* Estilo para as áreas detalhadas */
+.area-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+
+
+/* Estilo do título da área e seta */
+.toggle-info {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #501313; /* Cor do título */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.toggle-info:hover {
+    color: #800000; /* Cor ao passar o mouse */
+}
+
+/* Estilo da seta '>' */
+.arrow {
+    margin-right: 10px; /* Espaçamento entre a seta e o título */
+    font-size: 1.8rem;
+    transition: transform 0.3s ease; /* Suaviza a transição de rotação */
+}
+
+/* Quando a área estiver expandida, a seta gira */
+.toggle-info.show .arrow {
+    transform: rotate(90deg); /* Rotaciona a seta para indicar que a área está aberta */
+}
+
+/* Estilo do título da área */
+.area-title {
+    font-size: 1.5rem;
+}
+
+/* Estilo da área com os trabalhos (onde aparece a lista) */
+.area-info {
+    padding: 20px;
+    background-color: #f4f4f4; /* Cor de fundo da área */
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Borda fina de cor clara */
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Cor dos itens da lista dentro das áreas */
+.area-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.area-info li {
+    font-size: 1.2rem;
+    color: #333; /* Cor do texto dos itens */
+    margin: 8px 0;
+}
+
+/* Alterar a cor ao passar o mouse nos itens da lista */
+.area-info li:hover {
+    color: #800000; /* Cor dos itens da lista ao passar o mouse */
+    cursor: pointer;
+} 
+
+/* ===== CONSULTORIA ONLINE - ESTÉTICA PROFISSIONAL ===== */
+
+#consulta-online {
+    background-color: #f8f6f6;
+    padding: 70px 0;
+}
+
+#consulta-online .container {
+    max-width: 900px;
+}
+
+#consulta-online h2 {
+    font-size: 2.2rem;
+    color: #5a0f0f;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#consulta-online p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+/* Lista como cards */
+#consulta-online ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+#consulta-online li {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-left: 5px solid #800000;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#consulta-online li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+#consulta-online li strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #800000;
+    font-size: 1.15rem;
+}
+
+/* ===== TRABALHOS REALIZADOS - ESTÉTICA PROFISSIONAL ===== */
+
+#trabalhos {
+    background-color: #ffffff;
+    padding: 70px 0;
+}
+
+#trabalhos .container {
+    max-width: 1000px;
+}
+
+/* Título e descrição */
+#trabalhos h2 {
+    font-size: 2.2rem;
+    color: #5a0f0f;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#trabalhos p {
+    font-size: 1.15rem;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+/* Blocos das áreas */
+.toggle-area {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f8f6f6;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* Título clicável */
+.toggle-info {
+    padding: 20px 25px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: #ffffff;
+    color: #5a0f0f;
+    border-left: 6px solid #800000;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-info:hover {
+    background-color: #f1eded;
+}
+
+/* Área que abre */
+.area-info {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-top: 1px solid #ddd;
+}
+
+/* Lista interna organizada */
+.area-info ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+/* Itens da lista */
+.area-info li {
+    background-color: #f8f6f6;
+    padding: 15px 18px;
+    border-radius: 6px;
+    font-size: 1.05rem;
+    border-left: 4px solid #800000;
+    transition: transform 0.3s ease;
+}
+
+.area-info li:hover {
+    transform: translateX(5px);
+}
+
+/* ================== RESPONSIVO CELULAR CORRETO ================== */
+
+@media (max-width: 768px) {
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .whatsapp-btn,
+    .instagram-btn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .foto-advogada {
+        width: 100%;
+        height: auto;
+    }
+
+    .mapa iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    footer {
+        font-size: 0.75rem;
+        padding: 10px;
+    }
+}
